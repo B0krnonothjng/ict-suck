@@ -1,0 +1,12 @@
+SET ans TO rand(1,10)
+SENT 'What's your guess?'
+WHILE guess != ans
+	WHILE guess > 10
+  RECIEVE guess FROM KEYBOARD
+	if guess = ans 
+		SENT 'Congrats you've hit the jackpot!' TO DISPLAY
+		else if guess > ans
+			SENT 'Sorry too large try again' TO DISPLAY
+		else
+			SENT 'Sorry too small try again' TO DISPLAY
+			
