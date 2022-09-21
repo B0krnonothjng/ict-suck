@@ -1,0 +1,11 @@
+SEND 'WEIGHT: '
+RECIEVE weight from KEYBOARD
+SEND 'HEIGHT '
+RECIEVE height from KEYBOARD
+BMI = weight / height / height
+IF BMI < 18.5
+  SEND 'you're UNDERWEIGHT' to DISPLAY
+ELSE IF BMI >= wt
+	SEND 'you're OVERWEIGHT' to DISPLAY
+ELSE
+	SEND 'you're NORMALWEIGHT' to DISPLAY
